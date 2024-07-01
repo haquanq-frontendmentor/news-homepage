@@ -5,7 +5,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### The challenge
 
-- No access to design files :expressionless:
+- No access to design files, attemp pixel-perfect :expressionless:
 
 Users should be able to:
 
@@ -15,7 +15,7 @@ Users should be able to:
 ### Solution
 
 - Built with: `HTML` `CSS` `JS`
-- Mobile first workflow
+- Mobile-first workflow
 
 :link: [`Solution Link`]() :link: [`Live Site Link`]()
 
