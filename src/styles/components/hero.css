@@ -1,0 +1,15 @@
+.hero {
+    &__picture img {
+        height: 18.75rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media (--tablet) {
+        grid-column: span 2;
+    }
+
+    @media (--laptop) {
+        grid-column: span 2;
+    }
+}

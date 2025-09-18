@@ -1,0 +1,21 @@
+.btn {
+    padding-block: 1.125rem 1rem;
+    padding-inline: 1.9375rem 2rem;
+    font-size: var(--text-sm);
+    letter-spacing: 0.2715rem;
+    text-transform: uppercase;
+    transition: background-color 200ms ease;
+    background-color: var(--color-soft-red);
+    font-weight: var(--font-bold);
+    color: var(--color-off-white);
+
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            background-color: var(--color-very-dark-blue);
+        }
+    }
+}

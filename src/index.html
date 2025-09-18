@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="layout">
+      <nav class="nav">
+        <a class="nav__home-link" href="" aria-label="Homepage" aria-current="page">
+          <img class="nav__logo" src="./assets/images/logo.svg" alt="" />
+        </a>
+        <button
+          class="nav__menu-btn"
+          type="button"
+          aria-label="Mobile menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="nav__menu-btn--line"></span>
+          <span class="nav__menu-btn--line"></span>
+          <span class="nav__menu-btn--line"></span>
+        </button>
+        <div class="nav__menu" id="mobile-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="">New</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Popular</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Trending</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Categories</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main">
+        <div class="hero">
+          <picture class="hero__picture">
+            <source srcset="./assets/images/image-web-3-desktop.jpg" media="(min-width: 768px)" />
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="" />
+          </picture>
+          <h1 class="sr-only">News homepage</h1>
+        </div>
+
+        <section class="featured">
+          <h2 class="featured__title">The Bright Future of Web 3.0?</h2>
+          <div class="featured__detail">
+            <p class="featured__description">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people. But is it really fulfilling its promise?
+            </p>
+            <button class="featured__more-btn btn" type="button">Read more</button>
+          </div>
+        </section>
+
+        <section class="news">
+          <h2 class="news__title">New</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <h3 class="news__item-title"><a class="news__item-link" href="">Hydrogen VS Electric Cars</a></h3>
+              <p class="news__item-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </li>
+            <li class="news__item">
+              <h3 class="news__item-title"><a class="news__item-link" href="">The Downsides of AI Artistry</a></h3>
+              <p class="news__item-description">
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
+            </li>
+            <li class="news__item">
+              <h3 class="news__item-title"><a class="news__item-link" href="">Is VC Funding Drying Up?</a></h3>
+              <p class="news__item-description">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <aside class="trending">
+        <h2 class="sr-only">Trending reads</h2>
+        <ul class="trending__list">
+          <li class="trending__item">
+            <img class="trending__item-image" src="./assets/images/image-retro-pcs.jpg" alt="" />
+            <div class="trending__item-content">
+              <span class="trending__item-rank">01</span>
+              <h3 class="trending__item-title"><a class="trending__item-link" href="">Reviving Retro PCs</a></h3>
+              <p class="trending__item-description">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </li>
+          <li class="trending__item">
+            <img class="trending__item-image" src="./assets/images/image-top-laptops.jpg" alt="" />
+            <div class="trending__item-content">
+              <span class="trending__item-rank">02</span>
+              <h3 class="trending__item-title"><a class="trending__item-link" href="">Top 10 Laptops of 2022</a></h3>
+              <p class="trending__item-description">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li class="trending__item">
+            <img class="trending__item-image" src="./assets/images/image-gaming-growth.jpg" alt="" />
+            <div class="trending__item-content">
+              <span class="trending__item-rank">03</span>
+              <h3 class="trending__item-title"><a class="trending__item-link" href="">The Growth of Gaming</a></h3>
+              <p class="trending__item-description">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>
